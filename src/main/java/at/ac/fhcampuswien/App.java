@@ -137,7 +137,9 @@ public class App {
     public void transposedNumbers() {
         Scanner scan = new Scanner(System.in);
         int rev = 0;
-
+        /*
+         * The following 3 lines of Code have been taken from the Internet | https://www.programiz.com/java-programming/examples/reverse-number, last visit: 02.10.2022
+         */
         for(int num = scan.nextInt(); num != 0; num /= 10) {
             int digit = num % 10;
             rev = rev * 10 + digit;
