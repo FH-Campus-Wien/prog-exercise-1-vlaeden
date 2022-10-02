@@ -53,15 +53,15 @@ public class App {
     //todo Task 5
     public void swapTwoNumbers(){
         Scanner scan = new Scanner(System.in);
-        int firstnumber = scan.nextInt();
-        int secondnumber = scan.nextInt();
+        int n1 = scan.nextInt();
+        int n2= scan.nextInt();
 
-        firstnumber = firstnumber + secondnumber;
-        secondnumber = firstnumber - secondnumber;
-        firstnumber = firstnumber - secondnumber;
+        n1= n1 + n2;
+        n2 = n1 - n2;
+        n1 = n1 - n2;
 
-        System.out.println(firstnumber);
-        System.out.println(secondnumber);
+        System.out.println(n1);
+        System.out.println(n2);
     }
 
     //todo Task 6
