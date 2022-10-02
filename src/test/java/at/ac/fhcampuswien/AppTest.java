@@ -62,7 +62,7 @@ class AppTest {
         exercise1.helloRobot();
         String output = "0123456789012345678901" + System.lineSeparator();
         output += "         __" + System.lineSeparator() +
-                "         __" + System.lineSeparator() +
+                " _(\\    |@@|" + System.lineSeparator() +
                 "(__/\\__ \\--/ __" + System.lineSeparator() +
                 "   \\___|----|  |   __" + System.lineSeparator() +
                 "       \\ }{ /\\ )_ / _\\" + System.lineSeparator() +

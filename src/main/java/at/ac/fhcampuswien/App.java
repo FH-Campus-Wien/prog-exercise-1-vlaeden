@@ -1,13 +1,11 @@
 package at.ac.fhcampuswien;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class App {
 
     //todo Task 1
     public void sayHelloWorld(){
-        System.out.println("Hello World");
+        System.out.println("Hello World!");
     }
 
     //todo Task 2
@@ -53,36 +51,39 @@ public class App {
     //todo Task 5
     public void swapTwoNumbers(){
         Scanner scan = new Scanner(System.in);
+        System.out.println("Before Swap:");
+        System.out.print("x: ");
         int n1 = scan.nextInt();
+        System.out.print("y: ");
         int n2= scan.nextInt();
 
         n1= n1 + n2;
         n2 = n1 - n2;
         n1 = n1 - n2;
-
-        System.out.println(n1);
-        System.out.println(n2);
+        System.out.println("After Swap:");
+        System.out.println("x: " + n1);
+        System.out.println("y: " + n2);
     }
 
     //todo Task 6
     public void compareTwoNumbers() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("firstnumber: ");
-        int firstnumber = scan.nextInt();
-        System.out.println("secondnumber: ");
-        int secondnumber = scan.nextInt();
+        System.out.print("n1: ");
+        int n1 = scan.nextInt();
+        System.out.print("n2: ");
+        int n2 = scan.nextInt();
 
-        if (firstnumber == secondnumber) {
-            System.out.println("firstnumber==secondnumber");
-        } else if (firstnumber > secondnumber) {
-            System.out.println("firstnumber>secondnumber");
+        if (n1 == n2) {
+            System.out.println("n1 == n2");
+        } else if (n1 > n2) {
+            System.out.println("n1 > n2");
         } else {
-            System.out.println("secondnumber>firstnumber");
+            System.out.println("n2 > n1");
         }
     }
     //todo Task 7
     public void ratingSalesPerson(){
-        System.out.println("Enter annual Revenue: ");
+        System.out.print("Enter annual Revenue: ");
         Scanner scan = new Scanner(System.in);
 
         int umsatz = scan.nextInt();
@@ -106,25 +107,26 @@ public class App {
 
     //todo Task 8
     public void getCommissionRate(){
-        double provision = 0;
-        int eingabe = 0;
+        double provision;
+        int eingabe;
         Scanner scan = new Scanner(System.in);
+        System.out.print("Enter CommissionClass: ");
         eingabe = scan.nextInt();
         switch (eingabe) {
             case 1: provision=0.01;
-                System.out.println("Your provision is: " + provision);
+                System.out.println("Your Commission Rate was set to " + provision);
                 break;
             case 2: provision=0.02;
-                System.out.println("Your provision is: " + provision);
+                System.out.println("Your Commission Rate was set to " + provision);
                 break;
             case 3: provision=0.03;
-                System.out.println("Your provision is: " + provision);
+                System.out.println("Your Commission Rate was set to " + provision);
                 break;
             case 4: provision=0.04;
-                System.out.println("Your provision is: " + provision);
+                System.out.println("Your Commission Rate was set to " + provision);
                 break;
             default: provision=0.00;
-            System.out.println("Your provision is: " + provision);
+            System.out.println("Your Commission Rate was set to " + provision);
             break;
 }
 }
@@ -133,9 +135,9 @@ public class App {
         Scanner scan = new Scanner(System.in);
         int year = scan.nextInt();
        if (year%4 == 0 && (year%100 !=0 || year%400 == 0)){
-           System.out.println("Is a leap year!");
+           System.out.println("Year: Leapyear");
        } else {
-           System.out.println("Is not a leap year!");
+           System.out.println("Year: Not a Leapyear");
        }
 
 
@@ -145,7 +147,7 @@ public class App {
     public void transposedNumbers(){
         Scanner scan = new Scanner(System.in);
         int rev = 0;
-        System.out.println("Enter (Three Digit) Number: ");
+
         int num = scan.nextInt();
 
         while (num != 0) {
@@ -156,7 +158,7 @@ public class App {
             rev = rev * 10 + digit;
             num /= 10;
         }
-        System.out.println(rev);
+        System.out.println("Number: " + rev);
     }
 
 
